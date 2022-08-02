@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/CSS File/index.css" rel="stylesheet">
+    <title>Book Appointment</title>
+</head>
+<body>
+    <main class='bg-slate-100 text-center md:text-left'>
+        <section class='2xl:px-64 py-32 sm:px-8 lg:px-16 xl:px-40 px-4'>
+          <div class=' items-center '>
+            <h1 class='uppercase font-extrabold text-3xl mb-20 underline '>appointment from</h1>
+            <div class='flex flex-col '>
+              <span class='mb-2 font-semibold'>Your Name:</span>
+              <div><input class='w-96 p-1 border-2 border-blue-500 rounded-md shadow-lg font-semibold' type="text" placeholder='Ex: John F. Ford' /></div>
+            </div>
+            <div class='flex flex-col md:flex-row pt-10 '>
+              <div class='flex flex-col  pt-10 '>
+                <span class='mb-2 font-semibold'>Your Age:</span>
+                <div><input class='p-1 border-2 border-blue-500 rounded-md shadow-lg font-semibold' type="number" /></div>
+              </div>
+              <div class='flex flex-col  pt-10 md:pl-40 items-center md:items-start'>
+                <span class='mb-2 font-semibold'>Gender:</span>
+            <span class='text-xs'>Male, Female and TirdGender</span>
+                <select class='p-1 border-2 w-40  bg-white border-blue-500 rounded-md shadow-lg font-semibold' name="" id="">
+                  <option value="">Male</option>
+                  <option value="">Female</option>
+                  <option value="">TridGender</option>
+                </select>
+              </div>
+            </div>
+            <div class='flex flex-col md:flex-row pt-10 '>
+
+              <div class='flex flex-col  pt-10'>
+                <span class='mb-2 font-semibold'>Date of Birth:</span>
+                <div><input class='p-1 border-2 border-blue-500 rounded-md shadow-lg font-semibold' type="month" /></div>
+              </div>
+              <div class='flex flex-col  pt-10 md:pl-40'>
+                <span class='mb-2 font-semibold'>Mrried:</span>
+                <div>
+                <select class='p-1 bg-white border-2 border-blue-500 rounded-md shadow-lg font-semibold' name="" id="">
+                  <option value="">Yes</option>
+                  <option value="">No</option>
+                </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class='flex flex-col md:flex-row pt-10 '>
+            <div class='flex flex-col pt-10'>
+              <span class='mb-2 font-semibold'>Mobile Number:</span>
+              <div><input class='p-1 border-2 border-blue-500 rounded-md shadow-lg font-semibold ' type="tel" name="" id="" /></div>
+            </div>
+            <div class='flex flex-col pt-10 md:pl-40'>
+              <span class='mb-2 font-semibold'>OTP:</span>
+              <div><input class='p-1 border-2 border-blue-500 rounded-md shadow-lg font-semibold' type="password" name="" id="" /></div>
+            </div>
+          </div>
+          <div class='pt-20'>
+            <input type="checkbox" name="" id="" />
+            <span class='pl-4 text-sm font-bold'>Your Information Is Currect</span>
+          </div>
+          <div class='flex flex-col md:flex-row pl-10 '>
+            <div class='pt-40  text-center'>
+              <button class='p-2 px-10 border-2 bg-emerald-500 border-emerald-500 text-white rounded-md shadow-lg font-semibold shadow-emerald-500' type="submit">Send OTP</button>
+            </div>
+            <div class='pt-40 md:pl-10  text-center'>
+              <button class='p-2 px-10 border-2 bg-emerald-500 border-emerald-500 text-white rounded-md shadow-lg font-semibold shadow-emerald-500' type="submit" onClick={handleSubmit}>Submit</button>
+              
+            </div>
+          </div>
+        </section>
+      </main>
+</body>
+</html>
